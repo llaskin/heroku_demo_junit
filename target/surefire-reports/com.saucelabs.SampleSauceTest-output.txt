@@ -1,0 +1,25 @@
+Page header is: The Internet
+SauceOnDemandSessionID=3ca9884ad2a9410fa38800bfb92fb672 job-name=com.saucelabs.SampleSauceTest.sauce[0]
+May 16, 2016 12:58:24 PM com.saucelabs.saucerest.SauceREST closeInputStream
+WARNING: Error closing result stream
+java.io.FileNotFoundException: https://saucelabs.com/rest/v1/Leo_Laskin/jobs/3ca9884ad2a9410fa38800bfb92fb672
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1836)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at com.saucelabs.saucerest.SauceREST.closeInputStream(SauceREST.java:442)
+	at com.saucelabs.saucerest.SauceREST.updateJobInfo(SauceREST.java:410)
+	at com.saucelabs.junit.SauceOnDemandTestWatcher.succeeded(SauceOnDemandTestWatcher.java:95)
+	at org.junit.rules.TestWatcher.succeededQuietly(TestWatcher.java:75)
+	at org.junit.rules.TestWatcher.access$100(TestWatcher.java:46)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:56)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters.access$300(ConcurrentParameterized.java:166)
+	at com.saucelabs.junit.ConcurrentParameterized$SauceClassRunnerForParameters$2.run(ConcurrentParameterized.java:283)
+	at com.saucelabs.junit.ConcurrentParameterized$NonBlockingAsynchronousRunner$1.call(ConcurrentParameterized.java:308)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
